@@ -66,7 +66,7 @@ case class Visitor() extends PageVisitor {
 
 }
 
-case class Normalizer extends LinkNormalizer {
+case class Normalizer() extends LinkNormalizer {
 
   val normalizer = new DefaultLinkNormalizer("http://www4.planalto.gov.br/legislacao")
 
