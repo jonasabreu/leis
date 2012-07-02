@@ -71,7 +71,7 @@ case class Normalizer() extends LinkNormalizer {
   val normalizer = new DefaultLinkNormalizer("http://www4.planalto.gov.br/legislacao")
 
   def normalize(url : String) : String = {
-    val toReturn = normalizer.normalize(url)
+    val toReturn = normalizer.normalize(url).toLowerCase
     if (toReturn.contains("#"))
       toReturn.substring(0, toReturn.indexOf("#"))
     else
