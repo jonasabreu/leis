@@ -13,6 +13,10 @@
         <logger name="leis">
                 <level value="TRACE" />
         </logger>
+        
+        <logger name="net.vidageek.crawler.PageCrawler">
+                <level value="debug" />
+        </logger>
 
         <root>
         		<level value="WARN" />
