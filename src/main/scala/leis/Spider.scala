@@ -52,7 +52,7 @@ case class Visitor() extends PageVisitor {
   }
 
   def followUrl(url : Url) : Boolean = {
-    isDomainAllowed(url)
+    isDomainAllowed(url) && url.depth < 4
   }
 
   private def isDomainAllowed(url : Url) : Boolean = {
