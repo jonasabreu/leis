@@ -24,7 +24,7 @@ object Spider {
 
 case class Visitor() extends PageVisitor {
 
-  val directory = new File(System.getProperty("user.home"), "leis/" + new SimpleDateFormat("yyyy-MM-dd").format(new Date))
+  val directory = new File(System.getProperty("user.home") + "/leis")
   directory.mkdirs
 
   implicit def addAsFileName(page : Page) = new {
