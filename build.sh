@@ -12,4 +12,4 @@ git add .
 
 git commit -a -m "leis em `date +%Y-%m-%d`"
 
-
+git push origin master
