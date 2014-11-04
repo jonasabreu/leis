@@ -10,7 +10,7 @@ targetCompatibility = 1.5
 
 version = '1.0-SNAPSHOT'
 
-scalaVersion = '2.9.2'
+String scalaVersion = '2.9.2'
 
 repositories {
 	mavenCentral()
@@ -22,8 +22,6 @@ dependencies {
 	
 	testRuntime 'junit:junit:4.10'
 	
-	scalaTools 'org.scala-lang:scala-compiler:' + scalaVersion
-	scalaTools 'org.scala-lang:scala-library:' + scalaVersion
 }
 
 
